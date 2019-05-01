@@ -18,7 +18,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userPasswordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Step # 2")
                 let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
                 do{
                     let users = try PersistenceService.context.fetch(fetchRequest)

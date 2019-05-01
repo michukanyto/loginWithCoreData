@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        print("Step # 1")
         self.performSegue(withIdentifier: "loginView", sender: self)
         
     }
