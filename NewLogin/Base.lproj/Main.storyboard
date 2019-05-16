@@ -221,33 +221,63 @@
             </objects>
             <point key="canvasLocation" x="1515.9420289855075" y="788.83928571428567"/>
         </scene>
-        <!--Item 2-->
+        <!--Write-->
         <scene sceneID="1Wa-je-05w">
             <objects>
                 <viewController id="Sop-Sc-ZE2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mbc-8n-pJg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="piO-tt-dmR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="Yxb-bZ-ygQ">
+                                        <barButtonItem key="rightBarButtonItem" title="Log out" id="uoV-wA-eRV">
+                                            <connections>
+                                                <segue destination="Oz0-ty-iG0" kind="show" id="ScS-Wn-Lxy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="76L-1a-ofK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="7s3-wc-uIE"/>
+                    <tabBarItem key="tabBarItem" title="Write" id="7s3-wc-uIE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ph-wk-eg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3332" y="624"/>
         </scene>
-        <!--Item 1-->
+        <!--Read-->
         <scene sceneID="E9m-Mn-PTq">
             <objects>
                 <viewController id="xXq-Ta-cRI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hmP-WX-pA2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tfm-D5-uTy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="Wyt-el-gHJ">
+                                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="7TI-Mk-AeC">
+                                            <connections>
+                                                <segue destination="Oz0-ty-iG0" kind="show" id="pIc-Js-sG9"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vVv-0B-F1i"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="n0z-ed-oQ1"/>
+                    <tabBarItem key="tabBarItem" title="Read" id="n0z-ed-oQ1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mK8-JF-Ush" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -291,7 +321,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Cae-Md-IYE"/>
-        <segue reference="gz3-gq-Vil"/>
+        <segue reference="ScS-Wn-Lxy"/>
     </inferredMetricsTieBreakers>
 </document>
