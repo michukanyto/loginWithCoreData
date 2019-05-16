@@ -54,4 +54,9 @@ class LoginViewController: UIViewController {
         
     }
     
+    
+    @IBAction func endApp(_ sender: UIButton) {
+        exit(0)
+    }
+    
 }
