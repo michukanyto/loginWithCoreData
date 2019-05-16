@@ -83,6 +83,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="editingDidEnd:" destination="Oz0-ty-iG0" eventType="editingDidEnd" id="XaF-KU-NGQ"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBR-xV-W00">
                                 <rect key="frame" x="145" y="422" width="124" height="52"/>
@@ -118,8 +121,9 @@
                         <viewLayoutGuide key="safeArea" id="Kdb-ux-xId"/>
                     </view>
                     <connections>
+                        <outlet property="logInButton" destination="eBR-xV-W00" id="JQI-H1-VF5"/>
                         <outlet property="userEmailTextField" destination="MIa-UT-9cz" id="54p-gn-XH3"/>
-                        <outlet property="userPasswordTextField" destination="Jwf-HB-r04" id="PnM-p3-dua"/>
+                        <outlet property="userPasswordTextField" destination="Jwf-HB-r04" id="KLB-qI-Iyi"/>
                         <segue destination="TLV-On-aa1" kind="show" identifier="mainMenu" id="bpJ-IB-i6J"/>
                     </connections>
                 </viewController>
@@ -321,6 +325,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="bpJ-IB-i6J"/>
         <segue reference="ScS-Wn-Lxy"/>
     </inferredMetricsTieBreakers>
 </document>

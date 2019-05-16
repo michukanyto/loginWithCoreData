@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     var users = [User]()
 
     @IBOutlet weak var userEmailTextField: UITextField!
+    @IBOutlet weak var logInButton: UIButton!
     
     @IBOutlet weak var userPasswordTextField: UITextField!
     override func viewDidLoad() {
@@ -53,5 +54,6 @@ class LoginViewController: UIViewController {
         self.present(myAlert,animated: true,completion: nil)
         
     }
-    
+
+
 }
