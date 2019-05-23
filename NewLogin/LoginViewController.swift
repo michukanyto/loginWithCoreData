@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userEmailTextField: UITextField!
     
     @IBOutlet weak var userPasswordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                 let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
@@ -24,7 +25,6 @@ class LoginViewController: UIViewController {
                     self.users = users
                 }catch{}
         
-        // Do any additional setup after loading the view.
     }
     
 

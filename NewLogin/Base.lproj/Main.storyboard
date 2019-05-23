@@ -212,7 +212,7 @@
                                     <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Oz0-ty-iG0" kind="show" id="gz3-gq-Vil"/>
+                                    <segue destination="Oz0-ty-iG0" kind="showDetail" identifier="loginView" id="gz3-gq-Vil"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -329,6 +329,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ScS-Wn-Lxy"/>
+        <segue reference="gz3-gq-Vil"/>
     </inferredMetricsTieBreakers>
 </document>

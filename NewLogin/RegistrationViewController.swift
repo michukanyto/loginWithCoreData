@@ -11,6 +11,7 @@ import UIKit
 
 class RegistrationViewController: UIViewController{
     
+    var userCreatedOk: Bool!
     var users = [User]()
     
     @IBOutlet weak var userEmailTextField: UITextField!
@@ -28,13 +29,16 @@ class RegistrationViewController: UIViewController{
         //making validations
         guard let email = userEmailTextField.text,  email != "" else {
             displayMessage(message: "Empty user name")
+            userCreatedOk = false
             return
         }
         guard let password = userPasswordTextField.text,  password != "",
         let repeatPassword = userRepeatPasswordTextField.text, repeatPassword == password else {
             displayMessage(message: "Empty password or passwords don't match")
+            userCreatedOk = false
             return
         }
+        userCreatedOk = true
         //Saving data
         let user = User(context: PersistenceService.context)
         user.email = email
@@ -45,7 +49,7 @@ class RegistrationViewController: UIViewController{
         displayMessage(message: "Registration is successful !")
         print(user.email)
         print(user.password)
-
+        
     }
     
     
@@ -53,7 +57,16 @@ class RegistrationViewController: UIViewController{
         let myAlert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertController.Style.alert)
         let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
         myAlert.addAction(action)
-        self.present(myAlert,animated: true,completion: nil)
-        
+        present(myAlert,animated: true, completion: {
+            if self.userCreatedOk{
+                self.performSegue(withIdentifier: "loginView", sender: self)
+            }
+        })
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        self.performSegue(withIdentifier: "loginView", sender: self)
+//
+//    }
+
 }
