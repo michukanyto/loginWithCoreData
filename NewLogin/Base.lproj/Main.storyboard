@@ -333,11 +333,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
         <segue reference="gz3-gq-Vil"/>
-=======
         <segue reference="bpJ-IB-i6J"/>
         <segue reference="ScS-Wn-Lxy"/>
->>>>>>> 446fbddab63384c734b2b11b4b72def99a63ffbd
     </inferredMetricsTieBreakers>
 </document>

@@ -54,15 +54,9 @@ class LoginViewController: UIViewController {
         self.present(myAlert,animated: true,completion: nil)
         
     }
-<<<<<<< HEAD
-    
-    
+
     @IBAction func endApp(_ sender: UIButton) {
         exit(0)
     }
-    
-=======
 
-
->>>>>>> 446fbddab63384c734b2b11b4b72def99a63ffbd
 }
